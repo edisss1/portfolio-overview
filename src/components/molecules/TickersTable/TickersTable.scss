@@ -1,0 +1,52 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: clamp(16px, 5vw, 64px);
+
+    th,
+    td {
+        padding: 12px;
+        text-align: center;
+    }
+}
+
+.asset-row {
+    cursor: pointer;
+
+    transition: background-color 0.3s ease-in-out;
+
+    &:active,
+    &:hover {
+        background-color: #ccc;
+    }
+}
+
+.empty-portfolio {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    th {
+        display: none;
+    }
+
+    td {
+        display: block;
+    }
+
+    .asset-row > td:first-child {
+        font-weight: 700;
+    }
+    td:nth-of-type(2n) {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}

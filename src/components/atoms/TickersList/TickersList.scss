@@ -1,0 +1,35 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 200px;
+    overflow-y: scroll;
+    list-style-type: none;
+    align-items: start;
+    justify-content: start;
+    padding-inline: 8px;
+    flex-shrink: 0;
+
+    li {
+        width: 100%;
+        padding: 2px;
+    }
+
+    li:hover {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+
+    button {
+        background: none;
+        border: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    span {
+        width: 100%;
+    }
+}

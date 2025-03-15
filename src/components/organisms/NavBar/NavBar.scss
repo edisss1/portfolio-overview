@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: clamp(1rem, 10vw, 4rem);
+    padding-block: 1rem;
+    width: 100vw;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+
+    span {
+        text-align: center;
+    }
+
+    button {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.modal-input {
+    padding: 8px 12px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.modal-input:focus {
+    outline: none;
+    border-bottom-color: #111;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    bottom: 0;
+}

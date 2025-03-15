@@ -1,0 +1,20 @@
+$bg-button: #f698e5;
+
+.btn {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+    background-color: $bg-button;
+    border: none;
+    padding: 12px;
+    border-radius: 24px;
+    font-size: medium;
+    cursor: pointer;
+    transition: scale 0.1s linear;
+
+    &:hover,
+    :active {
+        scale: 0.95;
+    }
+}
